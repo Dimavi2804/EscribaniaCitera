@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/**************INDEX**************/
+
+/*************Header**************/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: rgb(237, 239, 226);
+    padding: 10px 10px;
+}
+
+.menu-nav {
+    background-color: rgb(237, 239, 226);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: 100%;
+}
+
+.menu-item {
+    color: black;
+}
+
+.menu-item:hover {
+    color: brown;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+}
+
+
+.atencion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.hora-atencion {
+    font-weight: bold;
+}
+
+/**************Main**************/
+
+/*.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}*/
+
+.servicios {
+    /*border: double 5px;
+    border-radius: 10px;*/
+    /*width: 100%;*/
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    column-gap: 5em;
+}
+
+.servicio-personalizado {
+    /*text-align: center;
+    width: 398px;*/
+    border: double 5px;
+    border-radius: 10px;
+    text-align: center;
+    /*margin: 20px 100px 40px 200px;*/
+    padding: 10px 10px 10px 10px;
+}
+
+.soluciones-integrales {
+    /*text-align: center;
+    width: 398px;*/
+    border: double 5px;
+    border-radius: 10px;
+    text-align: center;
+    /*margin: 20px 100px 40px 20px;*/
+    padding: 10px 10px 10px 10px;
+}
+
+.asesoramiento {
+    /*text-align: center;
+    width: 420px;*/
+    border: double 5px;
+    border-radius: 10px;
+    text-align: center;
+    /*margin: 20px 100px 40px 20px;*/
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+
+.descripcion {
+    color: rgb(20, 70, 20);
+    
+}
+
+/*.nuestro-estudio {
+    display: flex;
+    flex-direction: row;
+}*/
+
+.nuestro-estudio {
+    margin-top: 4rem;
+    /*border: solid 2px;
+    border-radius: 10px;
+    padding: 5px 5px;*/
+    object-fit: cover;
+
+    display: grid;
+    grid-template-columns: 597px 1fr;
+    grid-template-rows: 1fr;
+   
+}
+
+.titulo-descripcion {
+    display: grid;
+    place-items: center;
+    align-items: start;
+}
+
+.titulo-parrafo {
+    border: solid 2px;
+}
+
+.img-main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.parrafo-descripcion {
+    margin-top: 1rem;
+    font-size: 1em;
+}
+
+/*.titulo-descripcion {
+    justify-items: center;
+}*/
+
+
+/**************Footer**************/
+
+.footer {
+    background-color: rgb(237, 239, 226);
+}
+
+.copyright {
+    text-align: center;
+}
+
+.logos-rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/**************INDEX - FIN**************/
+
+
+
+/**************NOSOTROS**************/
+
+
+/**************Main****************/
+
+.sobre-nosotros {
+    border: solid 2px;
+    margin-top: 3rem;
+    background-color: rgb(226, 224, 224);
+    
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"sobre-nosotros-imagen  sobre-nosotros-titulo" ;
+}
+
+.sobre-nosotros-escribano {
+    font-size: 20px;
+}
+
+.sobre-nosotros-objetivo {
+    font-size: 20px;
+}
+
+.sobre-nosotros-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nosotros-titulo {
+    grid-area: sobre-nosotros-titulo;
+    padding: 10px;
+}
+
+.mision {
+    padding: 5px;
+    margin: 1rem;
+    border: solid 2px;
+    text-align: center;
+}
+
+.vision {
+    padding: 5px;
+    margin: 1rem;
+    border: solid 2px;
+    text-align: center;
+}
+
+.pilares {
+    padding: 5px;
+    margin: 1rem;
+    border: solid 2px;
+    text-align: center;
+}
+
+
+.mision-vision-pilares {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.pilares-lista {
+    list-style-type: none;
+}
+
+.acerca-nosotros {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.acerca-nosotros-title {
+    font-size: 35px;
+}
+
+/**************SERVICIOS**************/
+
+.servicios-all {
+    /*background-color: aquamarine;*/
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.title-page-servicio {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.servicio {
+    color: brown;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.lista-servicios {
+    list-style-type: circle;
+}
+
+/*body {
+    background-image: url(../img/pluma.papiro.jpg);
+}*/
+
+
+/***********MEDIA QUERIES*********/
+
+
+@media (width < 1075px) {
+    .nuestro-estudio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (width < 760px) {
+    .servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1em;
+    }
+}
