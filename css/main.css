@@ -268,18 +268,77 @@
 
 /**************SERVICIOS**************/
 
+
+main {
+    background-color: #BFD7B5;
+}
+
+
 .servicios-all {
     /*background-color: aquamarine;*/
     
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
+    grid-template-areas:
+    "asesoramiento   imagen1"
+    "tramites        imagen2"
+    "certificados    imagen3";
 }
+
+.serv_1 {
+    grid-area: asesoramiento;
+    margin-left: 1rem;
+}
+
+.serv_2 {
+    grid-area: tramites;
+    margin-left: 1rem;
+}
+
+.serv_3 {
+    grid-area: certificados;
+    margin-left: 1rem;
+}
+
+.img_serv_1 {
+    grid-area: imagen1;
+}
+
+.img_serv_2 {
+    grid-area: imagen2;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-right: 210px;*/   /*esto para el caso de usar flex-end en justify-content*/
+}
+
+.img_serv_3 {
+    grid-area: imagen3;
+}
+
+.img_tramites {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+
+  .img_asesor {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .img_certificado {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+
 
 .title-page-servicio {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 35px;
 }
 
@@ -293,9 +352,6 @@
     list-style-type: circle;
 }
 
-/*body {
-    background-image: url(../img/pluma.papiro.jpg);
-}*/
 
 
 /***********MEDIA QUERIES*********/
