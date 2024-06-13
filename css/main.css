@@ -139,7 +139,7 @@
     object-fit: cover;
 
     display: grid;
-    grid-template-columns: 597px 1fr;
+    grid-template-columns: 0.75fr 1fr;
     grid-template-rows: 1fr;
    
 }
@@ -152,6 +152,7 @@
 
 .titulo-parrafo {
     border: solid 2px;
+    margin-right: 3rem;
 }
 
 .img-main {
@@ -160,9 +161,24 @@
     place-items: center;
 }
 
+.img-nuestro-estudio {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
 .parrafo-descripcion {
     margin-top: 1rem;
     font-size: 1em;
+}
+
+.nuestro-servicio {
+    width: 50%;
+    border: solid 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nuestro-servicio-titulo {
+    text-align: center;
 }
 
 /*.titulo-descripcion {
@@ -269,10 +285,6 @@
 /**************SERVICIOS**************/
 
 
-main {
-    background-color: rgb(191, 215, 181);
-}
-
 
 .servicios-all {
     /*background-color: aquamarine;*/
@@ -357,7 +369,7 @@ main {
 /***********MEDIA QUERIES*********/
 
 
-@media (width < 1075px) {
+/*@media (width < 1075px) {
     .nuestro-estudio {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -366,10 +378,12 @@ main {
     }
 }
 
+
+
 @media (width < 760px) {
     .servicios {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 1em;
     }
-}
+}*/
