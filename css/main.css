@@ -1,406 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/**************INDEX**************/
-
-/*************Header**************/
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    background-color: rgb(237, 239, 226);
-    padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #005450;
+  padding: 10px 10px;
 }
-
-.menu-nav {
-    background-color: rgb(237, 239, 226);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
+.header .menu-nav {
+  background-color: #005450;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
 }
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    width: 100%;
+.header .nav-item {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-.menu-item {
-    color: black;
-}
-
-.menu-item:hover {
-    color: brown;
-}
-
-.menu-item {
-    text-decoration: none;
-    color: black;
-}
-
 
 .atencion {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-right: 10px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 10px;
+  width: 100%;
 }
-
-.hora-atencion {
-    font-weight: bold;
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
-
-/**************Main**************/
-
-.body {
-    background-color: rgb(245, 245, 245);
+.footer {
+  background-color: #005450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-/*.servicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}*/
 
 .servicios {
-    /*border: double 5px;
-    border-radius: 10px;*/
-    /*width: 100%;*/
-    margin-top: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-content: center;
-    column-gap: 5em;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  transition-duration: 2s;
 }
 
-.servicio-personalizado {
-    /*text-align: center;
-    width: 398px;*/
-    border: double 5px;
-    border-radius: 10px;
-    text-align: center;
-    /*margin: 20px 100px 40px 200px;*/
-    padding: 10px 10px 10px 10px;
+.servicios:hover {
+  background-color: #C1F7DC;
 }
-
-.soluciones-integrales {
-    /*text-align: center;
-    width: 398px;*/
-    border: double 5px;
-    border-radius: 10px;
-    text-align: center;
-    /*margin: 20px 100px 40px 20px;*/
-    padding: 10px 10px 10px 10px;
-}
-
-.asesoramiento {
-    /*text-align: center;
-    width: 420px;*/
-    border: double 5px;
-    border-radius: 10px;
-    text-align: center;
-    /*margin: 20px 100px 40px 20px;*/
-    padding: 10px 10px 10px 10px;
-}
-
-
-
-
-.descripcion {
-    color: rgb(20, 70, 20);
-    
-}
-
-/*.nuestro-estudio {
-    display: flex;
-    flex-direction: row;
-}*/
 
 .nuestro-estudio {
-    margin-top: 4rem;
-    /*border: solid 2px;
-    border-radius: 10px;
-    padding: 5px 5px;*/
-    object-fit: cover;
-
-    display: grid;
-    grid-template-columns: 0.75fr 1fr;
-    grid-template-rows: 1fr;
-   
-}
-
-.titulo-descripcion {
-    display: grid;
-    place-items: center;
-    align-items: start;
-}
-
-.titulo-parrafo {
-    border: solid 2px;
-    margin-right: 3rem;
-}
-
-.img-main {
-    width: 100%;
-    display: grid;
-    place-items: center;
-}
-
-.img-nuestro-estudio {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-}
-
-.parrafo-descripcion {
-    margin-top: 1rem;
-    font-size: 1em;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
 .nuestro-servicio {
-    width: 50%;
-    border: solid 2px;
-    margin-top: 20px;
-    margin-left: 20px;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
-.nuestro-servicio-titulo {
-    text-align: center;
+.img-escribano {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
-/*.titulo-descripcion {
-    justify-items: center;
-}*/
-
-
-/**************Footer**************/
-
-.footer {
-    background-color: rgb(237, 239, 226);
+.img-index {
+  background-image: url("../img/home-banner-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.copyright {
-    text-align: center;
-}
-
-.logos-rrss {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-right: 1rem;
-}
-
-/**************INDEX - FIN**************/
-
-
-
-/**************NOSOTROS**************/
-
-
-/**************Main****************/
-
-.sobre-nosotros {
-    
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    
-    
-    display: grid;
-    grid-template-columns: 700px 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:"sobre-nosotros-imagen  sobre-nosotros-titulo" ;
-}
-
-.sobre-nosotros-escribano {
-    font-size: 20px;
-}
-
-.sobre-nosotros-objetivo {
-    font-size: 20px;
-}
-
-.sobre-nosotros-imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sobre-nosotros-titulo {
-    grid-area: sobre-nosotros-titulo;
-    padding: 10px;
-}
-
-.mision {
-    padding: 5px;
-    margin: 1rem;
-    border: solid 2px;
-    text-align: center;
-}
-
-.vision {
-    padding: 5px;
-    margin: 1rem;
-    border: solid 2px;
-    text-align: center;
-}
-
-.pilares {
-    padding: 5px;
-    margin: 1rem;
-    border: solid 2px;
-    text-align: center;
-}
-
-
-.mision-vision-pilares {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.pilares-lista {
-    list-style-type: none;
-}
-
-.acerca-nosotros {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.acerca-nosotros-title {
-    font-size: 35px;
-}
-
-
-
-/**************SERVICIOS**************/
-
-
-
-.servicios-all {
-    /*background-color: aquamarine;*/
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "asesoramiento   imagen1"
-    "tramites        imagen2"
-    "certificados    imagen3";
-}
-
-.serv_1 {
-    grid-area: asesoramiento;
-    margin-left: 1rem;
-}
-
-.serv_2 {
-    grid-area: tramites;
-    margin-left: 1rem;
-}
-
-.serv_3 {
-    grid-area: certificados;
-    margin-left: 1rem;
-}
-
-.img_serv_1 {
-    grid-area: imagen1;
-}
-
-.img_serv_2 {
-    grid-area: imagen2;
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*margin-right: 210px;*/   /*esto para el caso de usar flex-end en justify-content*/
-}
-
-.img_serv_3 {
-    grid-area: imagen3;
-}
-
-.img_tramites {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    margin-top: 1px;
-    margin-bottom: 10px;
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
   }
-
-  .img_asesor {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
   }
-
-  .img_certificado {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-  
-
-
-.title-page-servicio {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 35px;
-}
-
-.servicio {
-    color: brown;
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-.lista-servicios {
-    list-style-type: circle;
-}
-
-
-/**************CONTACTO**************/
-
-
-
-
-
-
-
-/***********MEDIA QUERIES*********/
-
-
-/*@media (width < 1075px) {
-    .nuestro-estudio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-
-
-@media (width < 760px) {
-    .servicios {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 1em;
-    }
-}*/
+}/*# sourceMappingURL=main.css.map */
