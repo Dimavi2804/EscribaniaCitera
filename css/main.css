@@ -47,17 +47,19 @@
   align-items: center;
 }
 
-.servicios {
-  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  transition-duration: 2s;
+.body {
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: screen;
 }
 
-.servicios:hover {
-  background-color: #C1F7DC;
+.servicios {
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .nuestro-estudio {
   animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .nuestro-servicio {
@@ -79,6 +81,9 @@
   justify-content: center;
   align-items: center;
 }
+.img-index .titulo-escribania {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
 @keyframes swing-in-top-fwd {
   0% {
     transform: rotateX(-100deg);
@@ -88,6 +93,18 @@
   100% {
     transform: rotateX(0deg);
     transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
     opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
